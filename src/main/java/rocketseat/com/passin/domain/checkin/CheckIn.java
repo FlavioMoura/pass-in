@@ -34,4 +34,29 @@ public class CheckIn {
 	@OneToOne
 	@JoinColumn(name = "attendee_id", nullable = false)
 	private Attendee attendee;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	public Attendee getAttendee() {
+		return attendee;
+	}
+
+	public void setAttendee(Attendee attendee) {
+		this.attendee = attendee;
+	}
+
 }
